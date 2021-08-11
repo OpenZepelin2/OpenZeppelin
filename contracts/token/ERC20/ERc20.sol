@@ -3,6 +3,8 @@
 */
  //SPDX-License-Identifier: UNLICENSED
 pragma solidity ^0.8.0;
+
+import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
  
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
