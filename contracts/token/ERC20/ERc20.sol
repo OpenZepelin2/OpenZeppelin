@@ -1,10 +1,9 @@
 /**
  *Submitted for verification at Etherscan.io on 2021-08-05
 */
- //SPDX-License-Identifier: UNLICENSED
-pragma solidity ^0.8.0;
-
-import "github.com/OpenZeppelin/openzeppelin-contracts/blob/release-v2.5.0/contracts/token/ERC20/ERC20.sol";
+ 
+pragma solidity ^0.6.12;
+ 
  
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -84,7 +83,7 @@ interface IERC20 {
  
  
  
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.12;
  
  
 /**
@@ -113,7 +112,7 @@ interface IERC20Metadata is IERC20 {
  
  
  
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.12;
  
 /*
  * @dev Provides information about the current execution context, including the
@@ -140,7 +139,7 @@ abstract contract Context {
  
  
  
-pragma solidity ^0.8.0;
+pragma solidity ^0.6.12;
  
  
  
@@ -188,7 +187,7 @@ contract ERc20 is Context, IERC20, IERC20Metadata {
      * All two of these values are immutable: they can only be set once during
      * construction.
      */
-    constructor (string memory name_, string memory symbol_) {
+    constructor (string memory name_, string memory symbol_) public {
         _name = name_;
         _symbol = symbol_;
     }
@@ -456,6 +455,4 @@ contract ERc20 is Context, IERC20, IERC20Metadata {
 }
  
 // File: contracts/token/ERC20/behaviours/ERC20Decimals.sol
- 
- 
  
